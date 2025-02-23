@@ -1,5 +1,5 @@
 function clicked() {
-    alert('haiii!');
+    alert('bleh');
 }
 
 window.onload = function() {
@@ -8,4 +8,9 @@ window.onload = function() {
     click.addEventListener("click", (event) => {
         clicked();
     }); // basically means when your button with the ID of 'click' has a "click" event happen to it, it calls the function //
+}
+
+function randomName() {
+    const names = ['jessica', 'danny', 'melody', 'luna', 'celine', 'diana', 'ciel', 'lily', 'violet', 'mina'];
+    return names[Math.floor(Math.random() * names.length)];
 }

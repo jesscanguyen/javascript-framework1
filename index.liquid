@@ -2,6 +2,8 @@
 layout: layout.liquid
 title: 11ty Boilerplate
 ---
-<div x-data="{name: ['jessica', 'allie', 'zelda']}">
-    <button @click="alert(name[0])">Alpine</button>
+<div class="container" x-data="{selectedName: 'click the button for a name!'}">
+    <h1 x-text="selectedName"></h1>
+    <button @click="selectedName = randomName()">click me!</button>
+    <p>⋆˙⟡</p>
 </div>
